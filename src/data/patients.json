@@ -1,552 +1,212 @@
 [
   {
     "id": "P001",
-    "name": "Aarav Sharma",
+    "name": "Rahul Sharma",
     "age": 34,
     "gender": "Male",
     "bloodGroup": "O+",
-    "phone": "9000000001",
-    "email": "aarav.sharma@example.com",
-    "city": "Pune",
-    "status": "Active"
+    "dateOfBirth": "1992-04-15",
+    "phone": "9876543210",
+    "email": "rahul.sharma@email.com",
+    "address": "Pune, Maharashtra",
+    "status": "Active",
+    "medicalHistory": "Hypertension diagnosed in 2023.",
+    "medications": "Amlodipine 5mg once daily",
+    "allergies": "No known allergies",
+    "visits": [
+      {
+        "date": "2026-08-18",
+        "doctor": "Dr. Amit Mehta",
+        "department": "General Medicine",
+        "reason": "Blood pressure follow-up",
+        "diagnosis": "Hypertension",
+        "notes": "Blood pressure stable. Continue current medication."
+      },
+      {
+        "date": "2026-07-12",
+        "doctor": "Dr. Amit Mehta",
+        "department": "General Medicine",
+        "reason": "Routine consultation",
+        "diagnosis": "Hypertension",
+        "notes": "Recommended regular exercise and low-sodium diet."
+      },
+      {
+        "date": "2026-05-20",
+        "doctor": "Dr. Neha Joshi",
+        "department": "Neurology",
+        "reason": "Headache evaluation",
+        "diagnosis": "Tension headache",
+        "notes": "Advised adequate hydration and sleep."
+      }
+    ],
+    "vitals": {
+      "bloodPressure": "128/82",
+      "heartRate": 76,
+      "temperature": 98.4,
+      "spo2": 98,
+      "weight": 72,
+      "height": 175,
+      "bmi": 23.5
+    }
   },
   {
     "id": "P002",
     "name": "Priya Patil",
-    "age": 28,
+    "age": 29,
     "gender": "Female",
     "bloodGroup": "A+",
-    "phone": "9000000002",
-    "email": "priya.patil@example.com",
-    "city": "Mumbai",
-    "status": "Active"
+    "dateOfBirth": "1997-08-21",
+    "phone": "9823456712",
+    "email": "priya.patil@email.com",
+    "address": "Kothrud, Pune",
+    "status": "Active",
+    "medicalHistory": "History of migraine headaches.",
+    "medications": "Sumatriptan 50mg as needed",
+    "allergies": "Penicillin",
+    "visits": [
+      {
+        "date": "2026-08-15",
+        "doctor": "Dr. Neha Joshi",
+        "department": "Neurology",
+        "reason": "Migraine follow-up",
+        "diagnosis": "Migraine",
+        "notes": "Symptoms improving with current treatment."
+      },
+      {
+        "date": "2026-06-10",
+        "doctor": "Dr. Neha Joshi",
+        "department": "Neurology",
+        "reason": "Headache consultation",
+        "diagnosis": "Migraine",
+        "notes": "Recommended adequate sleep and hydration."
+      }
+    ],
+    "vitals": {
+      "bloodPressure": "118/76",
+      "heartRate": 72,
+      "temperature": 98.1,
+      "spo2": 99,
+      "weight": 61,
+      "height": 163,
+      "bmi": 23
+    }
   },
   {
     "id": "P003",
-    "name": "Rohan Kulkarni",
-    "age": 42,
+    "name": "Amit Deshmukh",
+    "age": 45,
     "gender": "Male",
     "bloodGroup": "B+",
-    "phone": "9000000003",
-    "email": "rohan.kulkarni@example.com",
-    "city": "Pune",
-    "status": "Active"
+    "dateOfBirth": "1981-02-10",
+    "phone": "9765432189",
+    "email": "amit.deshmukh@email.com",
+    "address": "Baner, Pune",
+    "status": "Active",
+    "medicalHistory": "Coronary artery disease under regular monitoring.",
+    "medications": "Atorvastatin 20mg once daily",
+    "allergies": "No known allergies",
+    "visits": [
+      {
+        "date": "2026-08-12",
+        "doctor": "Dr. Raj Kulkarni",
+        "department": "Cardiology",
+        "reason": "Cardiac follow-up",
+        "diagnosis": "Coronary artery disease",
+        "notes": "Cardiac condition stable. Continue medication."
+      },
+      {
+        "date": "2026-06-25",
+        "doctor": "Dr. Raj Kulkarni",
+        "department": "Cardiology",
+        "reason": "Routine cardiac evaluation",
+        "diagnosis": "Coronary artery disease",
+        "notes": "Recommended regular cardiac monitoring."
+      }
+    ],
+    "vitals": {
+      "bloodPressure": "135/88",
+      "heartRate": 81,
+      "temperature": 98.6,
+      "spo2": 97,
+      "weight": 84,
+      "height": 178,
+      "bmi": 26.5
+    }
   },
   {
     "id": "P004",
-    "name": "Sneha Deshmukh",
+    "name": "Sneha Joshi",
     "age": 31,
     "gender": "Female",
     "bloodGroup": "AB+",
-    "phone": "9000000004",
-    "email": "sneha.deshmukh@example.com",
-    "city": "Nashik",
-    "status": "Inactive"
+    "dateOfBirth": "1995-11-03",
+    "phone": "9898765432",
+    "email": "sneha.joshi@email.com",
+    "address": "Viman Nagar, Pune",
+    "status": "Active",
+    "medicalHistory": "No significant medical history.",
+    "medications": "No current medications",
+    "allergies": "Dust allergy",
+    "visits": [
+      {
+        "date": "2026-08-08",
+        "doctor": "Dr. Pooja Deshmukh",
+        "department": "Dermatology",
+        "reason": "Skin consultation",
+        "diagnosis": "Allergic dermatitis",
+        "notes": "Advised avoiding known allergens."
+      }
+    ],
+    "vitals": {
+      "bloodPressure": "116/74",
+      "heartRate": 70,
+      "temperature": 98.2,
+      "spo2": 99,
+      "weight": 58,
+      "height": 160,
+      "bmi": 22.7
+    }
   },
   {
     "id": "P005",
-    "name": "Aditya Joshi",
-    "age": 25,
-    "gender": "Male",
-    "bloodGroup": "O-",
-    "phone": "9000000005",
-    "email": "aditya.joshi@example.com",
-    "city": "Nagpur",
-    "status": "Active"
-  },
-  {
-    "id": "P006",
-    "name": "Neha Jadhav",
-    "age": 37,
-    "gender": "Female",
-    "bloodGroup": "A-",
-    "phone": "9000000006",
-    "email": "neha.jadhav@example.com",
-    "city": "Latur",
-    "status": "Active"
-  },
-  {
-    "id": "P007",
-    "name": "Vikram Pawar",
-    "age": 49,
-    "gender": "Male",
-    "bloodGroup": "B-",
-    "phone": "9000000007",
-    "email": "vikram.pawar@example.com",
-    "city": "Aurangabad",
-    "status": "Inactive"
-  },
-  {
-    "id": "P008",
-    "name": "Kavya More",
-    "age": 22,
-    "gender": "Female",
-    "bloodGroup": "O+",
-    "phone": "9000000008",
-    "email": "kavya.more@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P009",
-    "name": "Rahul Shinde",
-    "age": 45,
-    "gender": "Male",
-    "bloodGroup": "AB-",
-    "phone": "9000000009",
-    "email": "rahul.shinde@example.com",
-    "city": "Solapur",
-    "status": "Active"
-  },
-  {
-    "id": "P010",
-    "name": "Ananya Desai",
-    "age": 29,
-    "gender": "Female",
-    "bloodGroup": "B+",
-    "phone": "9000000010",
-    "email": "ananya.desai@example.com",
-    "city": "Mumbai",
-    "status": "Active"
-  },
-  {
-    "id": "P011",
-    "name": "Siddharth Bhosale",
-    "age": 38,
-    "gender": "Male",
-    "bloodGroup": "A+",
-    "phone": "9000000011",
-    "email": "siddharth.bhosale@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P012",
-    "name": "Meera Chavan",
-    "age": 33,
-    "gender": "Female",
-    "bloodGroup": "O+",
-    "phone": "9000000012",
-    "email": "meera.chavan@example.com",
-    "city": "Kolhapur",
-    "status": "Inactive"
-  },
-  {
-    "id": "P013",
-    "name": "Akash Wagh",
-    "age": 27,
-    "gender": "Male",
-    "bloodGroup": "B+",
-    "phone": "9000000013",
-    "email": "akash.wagh@example.com",
-    "city": "Nashik",
-    "status": "Active"
-  },
-  {
-    "id": "P014",
-    "name": "Pooja Gaikwad",
-    "age": 41,
-    "gender": "Female",
-    "bloodGroup": "A+",
-    "phone": "9000000014",
-    "email": "pooja.gaikwad@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P015",
-    "name": "Manish Thakur",
+    "name": "Vikram Kulkarni",
     "age": 52,
     "gender": "Male",
     "bloodGroup": "O-",
-    "phone": "9000000015",
-    "email": "manish.thakur@example.com",
-    "city": "Nagpur",
-    "status": "Inactive"
-  },
-  {
-    "id": "P016",
-    "name": "Isha Kapse",
-    "age": 24,
-    "gender": "Female",
-    "bloodGroup": "AB+",
-    "phone": "9000000016",
-    "email": "isha.kapse@example.com",
-    "city": "Latur",
-    "status": "Active"
-  },
-  {
-    "id": "P017",
-    "name": "Nikhil Salunkhe",
-    "age": 36,
-    "gender": "Male",
-    "bloodGroup": "B+",
-    "phone": "9000000017",
-    "email": "nikhil.salunkhe@example.com",
-    "city": "Satara",
-    "status": "Active"
-  },
-  {
-    "id": "P018",
-    "name": "Riya Sawant",
-    "age": 30,
-    "gender": "Female",
-    "bloodGroup": "O+",
-    "phone": "9000000018",
-    "email": "riya.sawant@example.com",
-    "city": "Mumbai",
-    "status": "Active"
-  },
-  {
-    "id": "P019",
-    "name": "Kunal Yadav",
-    "age": 44,
-    "gender": "Male",
-    "bloodGroup": "A-",
-    "phone": "9000000019",
-    "email": "kunal.yadav@example.com",
-    "city": "Pune",
-    "status": "Inactive"
-  },
-  {
-    "id": "P020",
-    "name": "Tanvi Kadam",
-    "age": 26,
-    "gender": "Female",
-    "bloodGroup": "B+",
-    "phone": "9000000020",
-    "email": "tanvi.kadam@example.com",
-    "city": "Aurangabad",
-    "status": "Active"
-  },
-  {
-    "id": "P021",
-    "name": "Harsh Vaidya",
-    "age": 39,
-    "gender": "Male",
-    "bloodGroup": "O+",
-    "phone": "9000000021",
-    "email": "harsh.vaidya@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P022",
-    "name": "Sakshi Nikam",
-    "age": 35,
-    "gender": "Female",
-    "bloodGroup": "AB+",
-    "phone": "9000000022",
-    "email": "sakshi.nikam@example.com",
-    "city": "Nashik",
-    "status": "Active"
-  },
-  {
-    "id": "P023",
-    "name": "Omkar Dhumal",
-    "age": 23,
-    "gender": "Male",
-    "bloodGroup": "A+",
-    "phone": "9000000023",
-    "email": "omkar.dhumal@example.com",
-    "city": "Latur",
-    "status": "Active"
-  },
-  {
-    "id": "P024",
-    "name": "Aditi Raut",
-    "age": 32,
-    "gender": "Female",
-    "bloodGroup": "O-",
-    "phone": "9000000024",
-    "email": "aditi.raut@example.com",
-    "city": "Pune",
-    "status": "Inactive"
-  },
-  {
-    "id": "P025",
-    "name": "Saurabh Koli",
-    "age": 47,
-    "gender": "Male",
-    "bloodGroup": "B-",
-    "phone": "9000000025",
-    "email": "saurabh.koli@example.com",
-    "city": "Solapur",
-    "status": "Active"
-  },
-  {
-    "id": "P026",
-    "name": "Mrunal Kale",
-    "age": 29,
-    "gender": "Female",
-    "bloodGroup": "A+",
-    "phone": "9000000026",
-    "email": "mrunal.kale@example.com",
-    "city": "Kolhapur",
-    "status": "Active"
-  },
-  {
-    "id": "P027",
-    "name": "Yash Patwardhan",
-    "age": 40,
-    "gender": "Male",
-    "bloodGroup": "O+",
-    "phone": "9000000027",
-    "email": "yash.patwardhan@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P028",
-    "name": "Shreya Borkar",
-    "age": 27,
-    "gender": "Female",
-    "bloodGroup": "B+",
-    "phone": "9000000028",
-    "email": "shreya.borkar@example.com",
-    "city": "Nagpur",
-    "status": "Inactive"
-  },
-  {
-    "id": "P029",
-    "name": "Abhishek More",
-    "age": 43,
-    "gender": "Male",
-    "bloodGroup": "AB+",
-    "phone": "9000000029",
-    "email": "abhishek.more@example.com",
-    "city": "Mumbai",
-    "status": "Active"
-  },
-  {
-    "id": "P030",
-    "name": "Nandini Suryawanshi",
-    "age": 36,
-    "gender": "Female",
-    "bloodGroup": "O+",
-    "phone": "9000000030",
-    "email": "nandini.suryawanshi@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P031",
-    "name": "Tejas Kharat",
-    "age": 31,
-    "gender": "Male",
-    "bloodGroup": "A+",
-    "phone": "9000000031",
-    "email": "tejas.kharat@example.com",
-    "city": "Nashik",
-    "status": "Active"
-  },
-  {
-    "id": "P032",
-    "name": "Vaishnavi Londhe",
-    "age": 25,
-    "gender": "Female",
-    "bloodGroup": "B+",
-    "phone": "9000000032",
-    "email": "vaishnavi.londhe@example.com",
-    "city": "Latur",
-    "status": "Active"
-  },
-  {
-    "id": "P033",
-    "name": "Pranav Jagtap",
-    "age": 48,
-    "gender": "Male",
-    "bloodGroup": "O-",
-    "phone": "9000000033",
-    "email": "pranav.jagtap@example.com",
-    "city": "Pune",
-    "status": "Inactive"
-  },
-  {
-    "id": "P034",
-    "name": "Komal Mhatre",
-    "age": 34,
-    "gender": "Female",
-    "bloodGroup": "A-",
-    "phone": "9000000034",
-    "email": "komal.mhatre@example.com",
-    "city": "Mumbai",
-    "status": "Active"
-  },
-  {
-    "id": "P035",
-    "name": "Ritesh Gawande",
-    "age": 55,
-    "gender": "Male",
-    "bloodGroup": "B+",
-    "phone": "9000000035",
-    "email": "ritesh.gawande@example.com",
-    "city": "Nagpur",
-    "status": "Active"
-  },
-  {
-    "id": "P036",
-    "name": "Swara Joshi",
-    "age": 21,
-    "gender": "Female",
-    "bloodGroup": "O+",
-    "phone": "9000000036",
-    "email": "swara.joshi@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P037",
-    "name": "Mihir Kulkarni",
-    "age": 46,
-    "gender": "Male",
-    "bloodGroup": "AB-",
-    "phone": "9000000037",
-    "email": "mihir.kulkarni@example.com",
-    "city": "Satara",
-    "status": "Inactive"
-  },
-  {
-    "id": "P038",
-    "name": "Rutuja Bhosale",
-    "age": 30,
-    "gender": "Female",
-    "bloodGroup": "A+",
-    "phone": "9000000038",
-    "email": "rutuja.bhosale@example.com",
-    "city": "Kolhapur",
-    "status": "Active"
-  },
-  {
-    "id": "P039",
-    "name": "Sanket Chavan",
-    "age": 33,
-    "gender": "Male",
-    "bloodGroup": "O+",
-    "phone": "9000000039",
-    "email": "sanket.chavan@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P040",
-    "name": "Pallavi Shukla",
-    "age": 39,
-    "gender": "Female",
-    "bloodGroup": "B+",
-    "phone": "9000000040",
-    "email": "pallavi.shukla@example.com",
-    "city": "Mumbai",
-    "status": "Active"
-  },
-  {
-    "id": "P041",
-    "name": "Dhruv Mehta",
-    "age": 28,
-    "gender": "Male",
-    "bloodGroup": "A+",
-    "phone": "9000000041",
-    "email": "dhruv.mehta@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P042",
-    "name": "Anjali Kamat",
-    "age": 44,
-    "gender": "Female",
-    "bloodGroup": "O-",
-    "phone": "9000000042",
-    "email": "anjali.kamat@example.com",
-    "city": "Goa",
-    "status": "Inactive"
-  },
-  {
-    "id": "P043",
-    "name": "Arjun Naik",
-    "age": 37,
-    "gender": "Male",
-    "bloodGroup": "B+",
-    "phone": "9000000043",
-    "email": "arjun.naik@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P044",
-    "name": "Madhura Salvi",
-    "age": 26,
-    "gender": "Female",
-    "bloodGroup": "AB+",
-    "phone": "9000000044",
-    "email": "madhura.salvi@example.com",
-    "city": "Nashik",
-    "status": "Active"
-  },
-  {
-    "id": "P045",
-    "name": "Kartik Shetty",
-    "age": 41,
-    "gender": "Male",
-    "bloodGroup": "O+",
-    "phone": "9000000045",
-    "email": "kartik.shetty@example.com",
-    "city": "Pune",
-    "status": "Active"
-  },
-  {
-    "id": "P046",
-    "name": "Ishita Rao",
-    "age": 23,
-    "gender": "Female",
-    "bloodGroup": "A+",
-    "phone": "9000000046",
-    "email": "ishita.rao@example.com",
-    "city": "Mumbai",
-    "status": "Inactive"
-  },
-  {
-    "id": "P047",
-    "name": "Sameer Khan",
-    "age": 50,
-    "gender": "Male",
-    "bloodGroup": "B+",
-    "phone": "9000000047",
-    "email": "sameer.khan@example.com",
-    "city": "Aurangabad",
-    "status": "Active"
-  },
-  {
-    "id": "P048",
-    "name": "Nisha Verma",
-    "age": 32,
-    "gender": "Female",
-    "bloodGroup": "O+",
-    "phone": "9000000048",
-    "email": "nisha.verma@example.com",
-    "city": "Nagpur",
-    "status": "Active"
-  },
-  {
-    "id": "P049",
-    "name": "Amit Tiwari",
-    "age": 57,
-    "gender": "Male",
-    "bloodGroup": "A-",
-    "phone": "9000000049",
-    "email": "amit.tiwari@example.com",
-    "city": "Pune",
-    "status": "Inactive"
-  },
-  {
-    "id": "P050",
-    "name": "Sonal Mishra",
-    "age": 35,
-    "gender": "Female",
-    "bloodGroup": "AB+",
-    "phone": "9000000050",
-    "email": "sonal.mishra@example.com",
-    "city": "Mumbai",
-    "status": "Active"
+    "dateOfBirth": "1974-06-28",
+    "phone": "9812345678",
+    "email": "vikram.kulkarni@email.com",
+    "address": "Aundh, Pune",
+    "status": "Inactive",
+    "medicalHistory": "Type 2 diabetes diagnosed in 2020.",
+    "medications": "Metformin 500mg twice daily",
+    "allergies": "Sulfa drugs",
+    "visits": [
+      {
+        "date": "2026-08-05",
+        "doctor": "Dr. Amit Mehta",
+        "department": "General Medicine",
+        "reason": "Diabetes follow-up",
+        "diagnosis": "Type 2 Diabetes",
+        "notes": "Blood glucose levels require continued monitoring."
+      },
+      {
+        "date": "2026-06-18",
+        "doctor": "Dr. Amit Mehta",
+        "department": "General Medicine",
+        "reason": "Routine diabetes consultation",
+        "diagnosis": "Type 2 Diabetes",
+        "notes": "Continue medication and maintain diabetic diet."
+      }
+    ],
+    "vitals": {
+      "bloodPressure": "142/90",
+      "heartRate": 84,
+      "temperature": 98.7,
+      "spo2": 96,
+      "weight": 91,
+      "height": 172,
+      "bmi": 30.8
+    }
   }
 ]
