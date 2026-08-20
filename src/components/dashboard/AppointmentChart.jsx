@@ -8,7 +8,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-import appointments from "./../../data/appointments.json";
+import appointments from "../../data/appointments.json";
 
 function AppointmentChart() {
   const chartData = appointments.map((appointment) => ({
