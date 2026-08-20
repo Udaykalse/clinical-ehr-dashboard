@@ -9,32 +9,50 @@ import {
 } from "lucide-react";
 
 import patients from "../data/patients.json";
-import AppointmentChart from "./chart/AppointmentChart";
-import PatientDemographics from "./chart/PatientDemographics";
+import appointments from "../data/appointments.json";
+
+import AppointmentChart from "../components/dashboard/AppointmentChart";
+import PatientDemographics from "../components/dashboard/PatientDemographics";
+import UpcomingAppointments from "../components/dashboard/UpcomingAppointments";
+
+const today = new Date().toISOString().split("T")[0];
+
+const todayAppointments = appointments.filter(
+  (appointment) => appointment.date === today,
+);
+
+const pendingAppointments = appointments.filter(
+  (appointment) => appointment.status === "Pending",
+);
+
+const completedAppointments = appointments.filter(
+  (appointment) => appointment.status === "Completed",
+);
+
 const stats = [
   {
     title: "Total Patients",
-    value: "1,248",
+    value: patients.length,
     icon: Users,
     description: "Registered patients",
   },
   {
     title: "Today's Appointments",
-    value: "32",
+    value: todayAppointments.length,
     icon: CalendarDays,
     description: "Scheduled today",
   },
   {
     title: "Pending Appointments",
-    value: "8",
+    value: pendingAppointments.length,
     icon: Clock,
     description: "Waiting for consultation",
   },
   {
     title: "Completed Visits",
-    value: "24",
+    value: completedAppointments.length,
     icon: CheckCircle,
-    description: "Completed today",
+    description: "Completed visits",
   },
 ];
 
@@ -193,6 +211,8 @@ function Dashboard() {
           </table>
         </div>
       </div>
+
+      <UpcomingAppointments />
 
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
         <AppointmentChart />
