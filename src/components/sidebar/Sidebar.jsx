@@ -1,9 +1,9 @@
 import {
+  X,
   LayoutDashboard,
   Users,
   CalendarDays,
   Stethoscope,
-  X,
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
