@@ -14,7 +14,6 @@ function Navbar({ onMenuClick }) {
           >
             <Menu size={22} />
           </button>
-
           <div>
             <h1 className="text-lg font-semibold text-slate-800">
               EHR Dashboard
