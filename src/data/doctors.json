@@ -1,0 +1,68 @@
+[
+  {
+    "id": "D001",
+    "name": "Dr. Amit Mehta",
+    "specialization": "General Medicine",
+    "department": "Medicine",
+    "experience": 12,
+    "phone": "9876501234",
+    "email": "amit.mehta@ehrdemo.com",
+    "status": "Available",
+    "patients": 248
+  },
+  {
+    "id": "D002",
+    "name": "Dr. Neha Joshi",
+    "specialization": "Neurology",
+    "department": "Neurology",
+    "experience": 9,
+    "phone": "9823012345",
+    "email": "neha.joshi@ehrdemo.com",
+    "status": "Available",
+    "patients": 186
+  },
+  {
+    "id": "D003",
+    "name": "Dr. Raj Kulkarni",
+    "specialization": "Cardiology",
+    "department": "Cardiology",
+    "experience": 15,
+    "phone": "9765012345",
+    "email": "raj.kulkarni@ehrdemo.com",
+    "status": "Busy",
+    "patients": 312
+  },
+  {
+    "id": "D004",
+    "name": "Dr. Pooja Deshmukh",
+    "specialization": "Dermatology",
+    "department": "Dermatology",
+    "experience": 7,
+    "phone": "9898012345",
+    "email": "pooja.deshmukh@ehrdemo.com",
+    "status": "Available",
+    "patients": 154
+  },
+  {
+    "id": "D005",
+    "name": "Dr. Sameer Patil",
+    "specialization": "Orthopedics",
+    "department": "Orthopedics",
+    "experience": 11,
+    "phone": "9819012345",
+    "email": "sameer.patil@ehrdemo.com",
+    "status": "Unavailable",
+    "patients": 203
+  },
+  {
+    "id": "D006",
+    "name": "Dr. Anjali Sharma",
+    "specialization": "Pediatrics",
+    "department": "Pediatrics",
+    "experience": 8,
+    "phone": "9845012345",
+    "email": "anjali.sharma@ehrdemo.com",
+    "status": "Available",
+    "patients": 175
+  }
+]
