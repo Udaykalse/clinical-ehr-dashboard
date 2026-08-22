@@ -1,4 +1,4 @@
-import { Search, Plus, Filter } from "lucide-react";
+import { Search, Plus, Filter, X } from "lucide-react";
 import { useState } from "react";
 import patients from "../data/patients.json";
 import { useNavigate } from "react-router-dom";
@@ -6,8 +6,23 @@ function Patients() {
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("All");
-
-  const filteredPatients = patients.filter((patient) => {
+  const [patientList, setPatientList] = useState(patients);
+  const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    age: "",
+    gender: "",
+    bloodGroup: "",
+    dateOfBirth: "",
+    phone: "",
+    email: "",
+    address: "",
+    status: "Active",
+    medicalHistory: "",
+    medications: "",
+    allergies: "",
+  });
+  const filteredPatients = patientList.filter((patient) => {
     const searchValue = search.toLowerCase();
 
     const matchesSearch =
@@ -19,7 +34,34 @@ function Patients() {
 
     return matchesSearch && matchesStatus;
   });
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
+    const newPatient = {
+      id: `P${String(patientList.length + 1).padStart(3, "0")}`,
+      ...formData,
+      age: Number(formData.age),
+    };
+
+    setPatientList((prev) => [newPatient, ...prev]);
+
+    setFormData({
+      name: "",
+      age: "",
+      gender: "",
+      bloodGroup: "",
+      dateOfBirth: "",
+      phone: "",
+      email: "",
+      address: "",
+      status: "Active",
+      medicalHistory: "",
+      medications: "",
+      allergies: "",
+    });
+
+    setShowModal(false);
+  };
   return (
     <div className="space-y-6">
       <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
@@ -31,8 +73,10 @@ function Patients() {
           </p>
         </div>
 
-        <button className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-blue-700">
-          <Plus size={18} />
+        <button
+          onClick={() => setShowModal(true)}
+          className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-blue-700"
+        >
           Add Patient
         </button>
       </div>
@@ -182,6 +226,291 @@ function Patients() {
           </table>
         </div>
       </div>
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4">
+          <div className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-xl bg-white shadow-xl">
+            <div className="flex items-center justify-between border-b border-slate-200 px-6 py-4">
+              <div>
+                <h2 className="text-lg font-semibold text-slate-800">
+                  Add Patient
+                </h2>
+
+                <p className="mt-1 text-xs text-slate-500">
+                  Create a new patient record
+                </p>
+              </div>
+
+              <button
+                onClick={() => setShowModal(false)}
+                className="rounded-lg p-2 text-slate-400 hover:bg-slate-100"
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-6 p-6">
+              <div>
+                <h3 className="mb-4 text-sm font-semibold text-slate-800">
+                  Personal Information
+                </h3>
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Full Name
+                    </label>
+
+                    <input
+                      required
+                      type="text"
+                      value={formData.name}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          name: e.target.value,
+                        })
+                      }
+                      placeholder="Enter full name"
+                      className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Age
+                    </label>
+
+                    <input
+                      required
+                      type="number"
+                      value={formData.age}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          age: e.target.value,
+                        })
+                      }
+                      placeholder="Age"
+                      className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Gender
+                    </label>
+
+                    <select
+                      required
+                      value={formData.gender}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          gender: e.target.value,
+                        })
+                      }
+                      className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                    >
+                      <option value="">Select gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Blood Group
+                    </label>
+
+                    <select
+                      required
+                      value={formData.bloodGroup}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          bloodGroup: e.target.value,
+                        })
+                      }
+                      className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                    >
+                      <option value="">Select blood group</option>
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Date of Birth
+                    </label>
+
+                    <input
+                      type="date"
+                      value={formData.dateOfBirth}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          dateOfBirth: e.target.value,
+                        })
+                      }
+                      className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Phone
+                    </label>
+
+                    <input
+                      required
+                      type="tel"
+                      value={formData.phone}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          phone: e.target.value,
+                        })
+                      }
+                      placeholder="Phone number"
+                      className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Email
+                    </label>
+
+                    <input
+                      type="email"
+                      value={formData.email}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          email: e.target.value,
+                        })
+                      }
+                      placeholder="Email address"
+                      className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Status
+                    </label>
+
+                    <select
+                      value={formData.status}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          status: e.target.value,
+                        })
+                      }
+                      className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                    >
+                      <option value="Active">Active</option>
+                      <option value="Inactive">Inactive</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="mt-4">
+                  <label className="text-sm font-medium text-slate-700">
+                    Address
+                  </label>
+
+                  <input
+                    type="text"
+                    value={formData.address}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        address: e.target.value,
+                      })
+                    }
+                    placeholder="Patient address"
+                    className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <h3 className="mb-4 text-sm font-semibold text-slate-800">
+                  Medical Information
+                </h3>
+
+                <div className="space-y-4">
+                  <textarea
+                    value={formData.medicalHistory}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        medicalHistory: e.target.value,
+                      })
+                    }
+                    placeholder="Medical history"
+                    rows="3"
+                    className="w-full resize-none rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                  />
+
+                  <textarea
+                    value={formData.medications}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        medications: e.target.value,
+                      })
+                    }
+                    placeholder="Current medications"
+                    rows="3"
+                    className="w-full resize-none rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                  />
+
+                  <textarea
+                    value={formData.allergies}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        allergies: e.target.value,
+                      })
+                    }
+                    placeholder="Known allergies"
+                    rows="3"
+                    className="w-full resize-none rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+
+              <div className="flex justify-end gap-3 border-t border-slate-200 pt-5">
+                <button
+                  type="button"
+                  onClick={() => setShowModal(false)}
+                  className="rounded-lg border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+
+                <button
+                  type="submit"
+                  className="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-blue-700"
+                >
+                  Add Patient
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
