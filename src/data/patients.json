@@ -8,46 +8,65 @@
     "dateOfBirth": "1992-04-15",
     "phone": "9876543210",
     "email": "rahul.sharma@email.com",
-    "address": "Pune, Maharashtra",
+    "address": "Kothrud, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411038",
     "status": "Active",
+    "emergencyContact": {
+      "name": "Anita Sharma",
+      "relationship": "Wife",
+      "phone": "9876501234"
+    },
+    "insurance": {
+      "provider": "Star Health",
+      "policyNumber": "SH0012345",
+      "status": "Active"
+    },
     "medicalHistory": "Hypertension diagnosed in 2023.",
     "medications": "Amlodipine 5mg once daily",
     "allergies": "No known allergies",
-    "visits": [
-      {
-        "date": "2026-08-18",
-        "doctor": "Dr. Amit Mehta",
-        "department": "General Medicine",
-        "reason": "Blood pressure follow-up",
-        "diagnosis": "Hypertension",
-        "notes": "Blood pressure stable. Continue current medication."
-      },
-      {
-        "date": "2026-07-12",
-        "doctor": "Dr. Amit Mehta",
-        "department": "General Medicine",
-        "reason": "Routine consultation",
-        "diagnosis": "Hypertension",
-        "notes": "Recommended regular exercise and low-sodium diet."
-      },
-      {
-        "date": "2026-05-20",
-        "doctor": "Dr. Neha Joshi",
-        "department": "Neurology",
-        "reason": "Headache evaluation",
-        "diagnosis": "Tension headache",
-        "notes": "Advised adequate hydration and sleep."
-      }
-    ],
     "vitals": {
       "bloodPressure": "128/82",
       "heartRate": 76,
       "temperature": 98.4,
       "spo2": 98,
       "weight": 72,
-      "height": 175,
-      "bmi": 23.5
-    }
+      "height": 174,
+      "bmi": 23.8
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-05-10",
+        "systolic": 138,
+        "diastolic": 88,
+        "heartRate": 82
+      },
+      {
+        "date": "2026-06-15",
+        "systolic": 134,
+        "diastolic": 85,
+        "heartRate": 79
+      },
+      {
+        "date": "2026-07-20",
+        "systolic": 130,
+        "diastolic": 82,
+        "heartRate": 76
+      },
+      {
+        "date": "2026-08-18",
+        "systolic": 126,
+        "diastolic": 80,
+        "heartRate": 74
+      },
+      {
+        "date": "2026-08-21",
+        "systolic": 124,
+        "diastolic": 78,
+        "heartRate": 72
+      }
+    ]
   },
   {
     "id": "P002",
@@ -58,38 +77,41 @@
     "dateOfBirth": "1997-08-21",
     "phone": "9823456712",
     "email": "priya.patil@email.com",
-    "address": "Kothrud, Pune",
+    "address": "Baner, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411045",
     "status": "Active",
+    "emergencyContact": {
+      "name": "Ramesh Patil",
+      "relationship": "Father",
+      "phone": "9823400001"
+    },
+    "insurance": {
+      "provider": "ICICI Lombard",
+      "policyNumber": "IL0023456",
+      "status": "Active"
+    },
     "medicalHistory": "History of migraine headaches.",
     "medications": "Sumatriptan 50mg as needed",
     "allergies": "Penicillin",
-    "visits": [
-      {
-        "date": "2026-08-15",
-        "doctor": "Dr. Neha Joshi",
-        "department": "Neurology",
-        "reason": "Migraine follow-up",
-        "diagnosis": "Migraine",
-        "notes": "Symptoms improving with current treatment."
-      },
-      {
-        "date": "2026-06-10",
-        "doctor": "Dr. Neha Joshi",
-        "department": "Neurology",
-        "reason": "Headache consultation",
-        "diagnosis": "Migraine",
-        "notes": "Recommended adequate sleep and hydration."
-      }
-    ],
     "vitals": {
       "bloodPressure": "118/76",
       "heartRate": 72,
-      "temperature": 98.1,
+      "temperature": 98.2,
       "spo2": 99,
-      "weight": 61,
-      "height": 163,
-      "bmi": 23
-    }
+      "weight": 58,
+      "height": 162,
+      "bmi": 22.1
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 116,
+        "diastolic": 74,
+        "heartRate": 70
+      }
+    ]
   },
   {
     "id": "P003",
@@ -100,38 +122,41 @@
     "dateOfBirth": "1981-02-10",
     "phone": "9765432189",
     "email": "amit.deshmukh@email.com",
-    "address": "Baner, Pune",
+    "address": "Aundh, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411007",
     "status": "Active",
+    "emergencyContact": {
+      "name": "Meena Deshmukh",
+      "relationship": "Wife",
+      "phone": "9765401234"
+    },
+    "insurance": {
+      "provider": "HDFC Ergo",
+      "policyNumber": "HE0034567",
+      "status": "Active"
+    },
     "medicalHistory": "Coronary artery disease under regular monitoring.",
     "medications": "Atorvastatin 20mg once daily",
     "allergies": "No known allergies",
-    "visits": [
-      {
-        "date": "2026-08-12",
-        "doctor": "Dr. Raj Kulkarni",
-        "department": "Cardiology",
-        "reason": "Cardiac follow-up",
-        "diagnosis": "Coronary artery disease",
-        "notes": "Cardiac condition stable. Continue medication."
-      },
-      {
-        "date": "2026-06-25",
-        "doctor": "Dr. Raj Kulkarni",
-        "department": "Cardiology",
-        "reason": "Routine cardiac evaluation",
-        "diagnosis": "Coronary artery disease",
-        "notes": "Recommended regular cardiac monitoring."
-      }
-    ],
     "vitals": {
-      "bloodPressure": "135/88",
-      "heartRate": 81,
+      "bloodPressure": "136/88",
+      "heartRate": 82,
       "temperature": 98.6,
       "spo2": 97,
       "weight": 84,
       "height": 178,
       "bmi": 26.5
-    }
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 132,
+        "diastolic": 84,
+        "heartRate": 80
+      }
+    ]
   },
   {
     "id": "P004",
@@ -143,29 +168,40 @@
     "phone": "9898765432",
     "email": "sneha.joshi@email.com",
     "address": "Viman Nagar, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411014",
     "status": "Active",
+    "emergencyContact": {
+      "name": "Raj Joshi",
+      "relationship": "Brother",
+      "phone": "9898701234"
+    },
+    "insurance": {
+      "provider": "Bajaj Allianz",
+      "policyNumber": "BA0045678",
+      "status": "Active"
+    },
     "medicalHistory": "No significant medical history.",
     "medications": "No current medications",
     "allergies": "Dust allergy",
-    "visits": [
-      {
-        "date": "2026-08-08",
-        "doctor": "Dr. Pooja Deshmukh",
-        "department": "Dermatology",
-        "reason": "Skin consultation",
-        "diagnosis": "Allergic dermatitis",
-        "notes": "Advised avoiding known allergens."
-      }
-    ],
     "vitals": {
       "bloodPressure": "116/74",
       "heartRate": 70,
-      "temperature": 98.2,
+      "temperature": 98.1,
       "spo2": 99,
-      "weight": 58,
-      "height": 160,
-      "bmi": 22.7
-    }
+      "weight": 61,
+      "height": 165,
+      "bmi": 22.4
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 114,
+        "diastolic": 72,
+        "heartRate": 68
+      }
+    ]
   },
   {
     "id": "P005",
@@ -176,37 +212,715 @@
     "dateOfBirth": "1974-06-28",
     "phone": "9812345678",
     "email": "vikram.kulkarni@email.com",
-    "address": "Aundh, Pune",
+    "address": "Shivajinagar, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411005",
     "status": "Inactive",
+    "emergencyContact": {
+      "name": "Sunita Kulkarni",
+      "relationship": "Wife",
+      "phone": "9812301234"
+    },
+    "insurance": {
+      "provider": "Niva Bupa",
+      "policyNumber": "NB0056789",
+      "status": "Active"
+    },
     "medicalHistory": "Type 2 diabetes diagnosed in 2020.",
     "medications": "Metformin 500mg twice daily",
     "allergies": "Sulfa drugs",
-    "visits": [
-      {
-        "date": "2026-08-05",
-        "doctor": "Dr. Amit Mehta",
-        "department": "General Medicine",
-        "reason": "Diabetes follow-up",
-        "diagnosis": "Type 2 Diabetes",
-        "notes": "Blood glucose levels require continued monitoring."
-      },
-      {
-        "date": "2026-06-18",
-        "doctor": "Dr. Amit Mehta",
-        "department": "General Medicine",
-        "reason": "Routine diabetes consultation",
-        "diagnosis": "Type 2 Diabetes",
-        "notes": "Continue medication and maintain diabetic diet."
-      }
-    ],
     "vitals": {
-      "bloodPressure": "142/90",
+      "bloodPressure": "142/92",
       "heartRate": 84,
-      "temperature": 98.7,
+      "temperature": 98.5,
       "spo2": 96,
       "weight": 91,
       "height": 172,
       "bmi": 30.8
-    }
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 138,
+        "diastolic": 88,
+        "heartRate": 82
+      }
+    ]
+  },
+  {
+    "id": "P006",
+    "name": "Neha More",
+    "age": 27,
+    "gender": "Female",
+    "bloodGroup": "B+",
+    "dateOfBirth": "1999-01-17",
+    "phone": "9988776655",
+    "email": "neha.more@email.com",
+    "address": "Hadapsar, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411028",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Suresh More",
+      "relationship": "Father",
+      "phone": "9988701234"
+    },
+    "insurance": {
+      "provider": "Care Health",
+      "policyNumber": "CH0067890",
+      "status": "Active"
+    },
+    "medicalHistory": "Seasonal allergic rhinitis.",
+    "medications": "Cetirizine 10mg as needed",
+    "allergies": "Pollen",
+    "vitals": {
+      "bloodPressure": "112/72",
+      "heartRate": 68,
+      "temperature": 98.3,
+      "spo2": 99,
+      "weight": 55,
+      "height": 160,
+      "bmi": 21.5
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 110,
+        "diastolic": 70,
+        "heartRate": 66
+      }
+    ]
+  },
+  {
+    "id": "P007",
+    "name": "Rohit Pawar",
+    "age": 39,
+    "gender": "Male",
+    "bloodGroup": "A+",
+    "dateOfBirth": "1987-03-25",
+    "phone": "9876123456",
+    "email": "rohit.pawar@email.com",
+    "address": "Wakad, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411057",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Pooja Pawar",
+      "relationship": "Wife",
+      "phone": "9876101234"
+    },
+    "insurance": {
+      "provider": "Star Health",
+      "policyNumber": "SH0078901",
+      "status": "Active"
+    },
+    "medicalHistory": "Mild asthma since childhood.",
+    "medications": "Salbutamol inhaler as needed",
+    "allergies": "Dust",
+    "vitals": {
+      "bloodPressure": "124/80",
+      "heartRate": 78,
+      "temperature": 98.5,
+      "spo2": 97,
+      "weight": 76,
+      "height": 176,
+      "bmi": 24.5
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 120,
+        "diastolic": 78,
+        "heartRate": 76
+      }
+    ]
+  },
+  {
+    "id": "P008",
+    "name": "Kavita Shinde",
+    "age": 43,
+    "gender": "Female",
+    "bloodGroup": "O+",
+    "dateOfBirth": "1983-05-19",
+    "phone": "9867452310",
+    "email": "kavita.shinde@email.com",
+    "address": "Pimpri, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411018",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Mahesh Shinde",
+      "relationship": "Husband",
+      "phone": "9867401234"
+    },
+    "insurance": {
+      "provider": "HDFC Ergo",
+      "policyNumber": "HE0089012",
+      "status": "Active"
+    },
+    "medicalHistory": "Hypothyroidism under treatment.",
+    "medications": "Levothyroxine 50mcg once daily",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "130/84",
+      "heartRate": 74,
+      "temperature": 98.2,
+      "spo2": 98,
+      "weight": 69,
+      "height": 158,
+      "bmi": 27.6
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 126,
+        "diastolic": 82,
+        "heartRate": 72
+      }
+    ]
+  },
+  {
+    "id": "P009",
+    "name": "Sagar Jadhav",
+    "age": 36,
+    "gender": "Male",
+    "bloodGroup": "AB+",
+    "dateOfBirth": "1990-09-12",
+    "phone": "9753124680",
+    "email": "sagar.jadhav@email.com",
+    "address": "Katraj, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411046",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Maya Jadhav",
+      "relationship": "Wife",
+      "phone": "9753101234"
+    },
+    "insurance": {
+      "provider": "ICICI Lombard",
+      "policyNumber": "IL0090123",
+      "status": "Active"
+    },
+    "medicalHistory": "Gastritis with occasional acid reflux.",
+    "medications": "Pantoprazole 40mg once daily",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "122/78",
+      "heartRate": 75,
+      "temperature": 98.4,
+      "spo2": 98,
+      "weight": 79,
+      "height": 180,
+      "bmi": 24.4
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 120,
+        "diastolic": 76,
+        "heartRate": 74
+      }
+    ]
+  },
+  {
+    "id": "P010",
+    "name": "Anjali Desai",
+    "age": 24,
+    "gender": "Female",
+    "bloodGroup": "A-",
+    "dateOfBirth": "2002-07-09",
+    "phone": "9811122233",
+    "email": "anjali.desai@email.com",
+    "address": "Koregaon Park, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411001",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Rajesh Desai",
+      "relationship": "Father",
+      "phone": "9811101234"
+    },
+    "insurance": {
+      "provider": "Bajaj Allianz",
+      "policyNumber": "BA0101234",
+      "status": "Active"
+    },
+    "medicalHistory": "Iron deficiency anemia.",
+    "medications": "Ferrous sulfate 325mg once daily",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "110/70",
+      "heartRate": 82,
+      "temperature": 98.1,
+      "spo2": 99,
+      "weight": 52,
+      "height": 163,
+      "bmi": 19.6
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 108,
+        "diastolic": 68,
+        "heartRate": 80
+      }
+    ]
+  },
+  {
+    "id": "P011",
+    "name": "Manoj Chavan",
+    "age": 58,
+    "gender": "Male",
+    "bloodGroup": "B-",
+    "dateOfBirth": "1968-12-01",
+    "phone": "9822113344",
+    "email": "manoj.chavan@email.com",
+    "address": "Nigdi, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411044",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Lata Chavan",
+      "relationship": "Wife",
+      "phone": "9822101234"
+    },
+    "insurance": {
+      "provider": "Niva Bupa",
+      "policyNumber": "NB0112345",
+      "status": "Active"
+    },
+    "medicalHistory": "Type 2 diabetes and hypertension.",
+    "medications": "Metformin 500mg and Amlodipine 5mg",
+    "allergies": "NSAIDs",
+    "vitals": {
+      "bloodPressure": "146/94",
+      "heartRate": 86,
+      "temperature": 98.7,
+      "spo2": 95,
+      "weight": 88,
+      "height": 170,
+      "bmi": 30.4
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 142,
+        "diastolic": 90,
+        "heartRate": 84
+      }
+    ]
+  },
+  {
+    "id": "P012",
+    "name": "Pooja Gaikwad",
+    "age": 33,
+    "gender": "Female",
+    "bloodGroup": "O+",
+    "dateOfBirth": "1993-10-14",
+    "phone": "9933445566",
+    "email": "pooja.gaikwad@email.com",
+    "address": "Kharadi, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411014",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Akash Gaikwad",
+      "relationship": "Husband",
+      "phone": "9933401234"
+    },
+    "insurance": {
+      "provider": "Care Health",
+      "policyNumber": "CH0123456",
+      "status": "Active"
+    },
+    "medicalHistory": "Polycystic ovary syndrome under monitoring.",
+    "medications": "Metformin 500mg once daily",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "118/78",
+      "heartRate": 73,
+      "temperature": 98.3,
+      "spo2": 99,
+      "weight": 67,
+      "height": 160,
+      "bmi": 26.2
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 116,
+        "diastolic": 76,
+        "heartRate": 72
+      }
+    ]
+  },
+  {
+    "id": "P013",
+    "name": "Nikhil Bhosale",
+    "age": 41,
+    "gender": "Male",
+    "bloodGroup": "O+",
+    "dateOfBirth": "1985-01-26",
+    "phone": "9844556677",
+    "email": "nikhil.bhosale@email.com",
+    "address": "Sinhagad Road, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411051",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Ritu Bhosale",
+      "relationship": "Wife",
+      "phone": "9844501234"
+    },
+    "insurance": {
+      "provider": "Star Health",
+      "policyNumber": "SH0134567",
+      "status": "Active"
+    },
+    "medicalHistory": "Chronic lower back pain.",
+    "medications": "Paracetamol as needed",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "126/82",
+      "heartRate": 77,
+      "temperature": 98.4,
+      "spo2": 98,
+      "weight": 82,
+      "height": 177,
+      "bmi": 26.2
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 124,
+        "diastolic": 80,
+        "heartRate": 76
+      }
+    ]
+  },
+  {
+    "id": "P014",
+    "name": "Swati Kadam",
+    "age": 48,
+    "gender": "Female",
+    "bloodGroup": "A+",
+    "dateOfBirth": "1978-04-30",
+    "phone": "9855667788",
+    "email": "swati.kadam@email.com",
+    "address": "Camp, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411001",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Vijay Kadam",
+      "relationship": "Husband",
+      "phone": "9855601234"
+    },
+    "insurance": {
+      "provider": "HDFC Ergo",
+      "policyNumber": "HE0145678",
+      "status": "Active"
+    },
+    "medicalHistory": "Osteoarthritis of the knee.",
+    "medications": "Paracetamol 500mg as needed",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "132/86",
+      "heartRate": 79,
+      "temperature": 98.6,
+      "spo2": 97,
+      "weight": 74,
+      "height": 157,
+      "bmi": 30.0
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 128,
+        "diastolic": 84,
+        "heartRate": 78
+      }
+    ]
+  },
+  {
+    "id": "P015",
+    "name": "Akshay Wagh",
+    "age": 30,
+    "gender": "Male",
+    "bloodGroup": "A+",
+    "dateOfBirth": "1996-02-18",
+    "phone": "9778899001",
+    "email": "akshay.wagh@email.com",
+    "address": "Wadgaon, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411041",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Snehal Wagh",
+      "relationship": "Sister",
+      "phone": "9778801234"
+    },
+    "insurance": {
+      "provider": "ICICI Lombard",
+      "policyNumber": "IL0156789",
+      "status": "Active"
+    },
+    "medicalHistory": "No significant medical history.",
+    "medications": "No current medications",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "120/76",
+      "heartRate": 71,
+      "temperature": 98.2,
+      "spo2": 99,
+      "weight": 70,
+      "height": 175,
+      "bmi": 22.9
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 118,
+        "diastolic": 74,
+        "heartRate": 70
+      }
+    ]
+  },
+  {
+    "id": "P016",
+    "name": "Meenal Kulkarni",
+    "age": 56,
+    "gender": "Female",
+    "bloodGroup": "B+",
+    "dateOfBirth": "1970-09-06",
+    "phone": "9766554433",
+    "email": "meenal.kulkarni@email.com",
+    "address": "Pashan, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411021",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Prakash Kulkarni",
+      "relationship": "Husband",
+      "phone": "9766501234"
+    },
+    "insurance": {
+      "provider": "Bajaj Allianz",
+      "policyNumber": "BA0167890",
+      "status": "Active"
+    },
+    "medicalHistory": "Hyperlipidemia and hypertension.",
+    "medications": "Atorvastatin 20mg and Losartan 50mg",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "138/88",
+      "heartRate": 80,
+      "temperature": 98.5,
+      "spo2": 97,
+      "weight": 77,
+      "height": 159,
+      "bmi": 30.5
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 134,
+        "diastolic": 86,
+        "heartRate": 78
+      }
+    ]
+  },
+  {
+    "id": "P017",
+    "name": "Tejas Raut",
+    "age": 26,
+    "gender": "Male",
+    "bloodGroup": "O+",
+    "dateOfBirth": "2000-05-22",
+    "phone": "9899123456",
+    "email": "tejas.raut@email.com",
+    "address": "Balewadi, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411045",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Kiran Raut",
+      "relationship": "Father",
+      "phone": "9899101234"
+    },
+    "insurance": {
+      "provider": "Care Health",
+      "policyNumber": "CH0178901",
+      "status": "Active"
+    },
+    "medicalHistory": "Seasonal viral infections.",
+    "medications": "No regular medications",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "118/72",
+      "heartRate": 69,
+      "temperature": 98.0,
+      "spo2": 99,
+      "weight": 68,
+      "height": 178,
+      "bmi": 21.5
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 116,
+        "diastolic": 70,
+        "heartRate": 68
+      }
+    ]
+  },
+  {
+    "id": "P018",
+    "name": "Rashmi Salunkhe",
+    "age": 37,
+    "gender": "Female",
+    "bloodGroup": "AB+",
+    "dateOfBirth": "1989-07-11",
+    "phone": "9888776655",
+    "email": "rashmi.salunkhe@email.com",
+    "address": "Magarpatta, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411028",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Amit Salunkhe",
+      "relationship": "Husband",
+      "phone": "9888701234"
+    },
+    "insurance": {
+      "provider": "Niva Bupa",
+      "policyNumber": "NB0189012",
+      "status": "Active"
+    },
+    "medicalHistory": "Migraine and vitamin D deficiency.",
+    "medications": "Vitamin D3 supplement",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "116/74",
+      "heartRate": 72,
+      "temperature": 98.2,
+      "spo2": 98,
+      "weight": 63,
+      "height": 164,
+      "bmi": 23.4
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 114,
+        "diastolic": 72,
+        "heartRate": 70
+      }
+    ]
+  },
+  {
+    "id": "P019",
+    "name": "Harshad Thakur",
+    "age": 47,
+    "gender": "Male",
+    "bloodGroup": "B+",
+    "dateOfBirth": "1979-03-08",
+    "phone": "9833445566",
+    "email": "harshad.thakur@email.com",
+    "address": "Dhanori, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411015",
+    "status": "Inactive",
+    "emergencyContact": {
+      "name": "Nisha Thakur",
+      "relationship": "Wife",
+      "phone": "9833401234"
+    },
+    "insurance": {
+      "provider": "Star Health",
+      "policyNumber": "SH0190123",
+      "status": "Expired"
+    },
+    "medicalHistory": "Chronic gastritis and hypertension.",
+    "medications": "Pantoprazole 40mg and Telmisartan 40mg",
+    "allergies": "No known allergies",
+    "vitals": {
+      "bloodPressure": "140/90",
+      "heartRate": 81,
+      "temperature": 98.6,
+      "spo2": 96,
+      "weight": 86,
+      "height": 173,
+      "bmi": 28.7
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 136,
+        "diastolic": 88,
+        "heartRate": 80
+      }
+    ]
+  },
+  {
+    "id": "P020",
+    "name": "Isha Mahajan",
+    "age": 22,
+    "gender": "Female",
+    "bloodGroup": "O+",
+    "dateOfBirth": "2004-10-29",
+    "phone": "9900112233",
+    "email": "isha.mahajan@email.com",
+    "address": "Yerawada, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "postalCode": "411006",
+    "status": "Active",
+    "emergencyContact": {
+      "name": "Rohit Mahajan",
+      "relationship": "Brother",
+      "phone": "9900101234"
+    },
+    "insurance": {
+      "provider": "ICICI Lombard",
+      "policyNumber": "IL0201234",
+      "status": "Active"
+    },
+    "medicalHistory": "No significant medical history.",
+    "medications": "No current medications",
+    "allergies": "Peanuts",
+    "vitals": {
+      "bloodPressure": "114/72",
+      "heartRate": 70,
+      "temperature": 98.1,
+      "spo2": 99,
+      "weight": 54,
+      "height": 161,
+      "bmi": 20.8
+    },
+    "vitalsHistory": [
+      {
+        "date": "2026-08-21",
+        "systolic": 112,
+        "diastolic": 70,
+        "heartRate": 68
+      }
+    ]
   }
 ]
